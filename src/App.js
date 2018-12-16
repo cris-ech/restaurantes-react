@@ -1,28 +1,28 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import { Route, Link, BrowserRouter as Router, Switch } from 'react-router-dom'
+import './index.css'
+import Restaurant from './components/Restaurant'
+import Fake from './components/Fake'
+import NotFound from './components/NotFound'
+import Sale from './components/Sale'
+import SaleList from './components/SaleList'
 
-class App extends Component {
+
+class App extends React.Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
+      <Router>
+        <Switch>
+          <Route exact path="/" component={Fake} />
+          <Route path="/restaurant/:id" component={Restaurant} />
+          <Route path="/oferta/:id" component={Sale} />
+          <Route path="/ofertas" component={SaleList} />
+          <Route path="/fake" component={Fake} />
+          <Route component={NotFound} />
+      </Switch>
+    </Router>
+    )
   }
 }
-
-export default App;
+export default App
