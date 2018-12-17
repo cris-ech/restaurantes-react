@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import { Col, Button, Form, FormGroup, Label, Input, FormText,Container } from 'reactstrap';
 
 class PersonList extends React.Component {
   constructor(props) {
@@ -50,23 +51,52 @@ class PersonList extends React.Component {
 
   render() {
     return (
+      <Container fluid>
+      <h2 style={{fontWeight:'300',
+      fontSize: '180%',
+      textAlign:'center',
+      wordSpacing: '3px',
+      letterSpacing:'1px',
+      paddingTop:'10px',
+    }}>
+    Deja tu opinión</h2>
+    <hr  style={{marginBottom:'10px',backgroundColor:'#e67e22'}} className="my-2"></hr>
       <div>
-        <form onSubmit={this.handleSubmit}>
-          <label>
-            Nombre:
-            <input type="text" name="name" onChange={this.handleChangeName} />
-          </label><br/>
-          <label>
-            Rate:
-            <input type="text" name="rate" onChange={this.handleChangeRate} />
-          </label><br/>
-          <label>
-            Opinion:
-            <input type="text" name="review" onChange={this.handleChangeReview} />
-          </label><br/>
-          <button type="submit">Add</button>
-        </form>
+        <Form onSubmit={this.handleSubmit}>
+        <FormGroup row>
+          <Label for="name" sm={3}>Nombre: </Label>
+            <Col sm={7}>
+            <Input type="text" name="name" id="name" onChange={this.handleChangeName} />
+            </Col>
+          </FormGroup>
+          <FormGroup row>
+          <Label for="rate" sm={3}>Puntuación:</Label>
+          <Col sm={7}>
+          <Input type="select" name="rate" id="rate" onChange={this.handleChangeRate} >
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </Input>
+          </Col>
+        </FormGroup>
+        <FormGroup row>
+          <Label for="review" sm={3}>Opinion: </Label>
+            <Col sm={7}>
+            <Input type="textarea" name="review" id="review" onChange={this.handleChangeReview} />
+            </Col>
+          </FormGroup>
+          <FormGroup check row>
+          <Col sm={{ size: 10 }}>
+          <div style={{textAlign:'center', paddingButton:"10px"}}>
+            <Button type="submit" style={{borderColor:'#e67e22', backgroundColor:'#e67e22'}}>Enviar</Button>
+          </div>
+          </Col>
+        </FormGroup>
+        </Form>
       </div>
+      </Container>
     )
   }
 }

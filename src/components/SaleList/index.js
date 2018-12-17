@@ -1,6 +1,7 @@
 import React from 'react'
 import axios from 'axios'
 import SaleCard from "../SaleCard";
+import { ListGroup, ListGroupItem, Row, Col, Container } from 'reactstrap';
 
 
 class SaleList extends React.Component {
@@ -27,18 +28,31 @@ class SaleList extends React.Component {
 
   render() {
     //const { params } = this.props.match
-    return (
-      <ul>
+    return (<Container fluid>
+      <h2 style={{fontWeight:'300',
+      fontSize: '180%',
+      textAlign:'center',
+      wordSpacing: '3px',
+      letterSpacing:'1px',
+      paddingTop:'10px',
+    }}>
+    ¡Las mejores ofertas!</h2>
+    <hr  style={{marginBottom:'10px',backgroundColor:'#e67e22'}} className="my-2"></hr>
+    
+      
         {this.state.Sales.map(sale => {
-        return <li key={`sale_${Math.random()}`}>
+        return <box>
         <SaleCard
         name={sale.name}
         description={sale.description}
         />
-
-        </li>
-        })}
-      </ul>
+        </box>
+       
+        }
+        )}
+       
+      </Container>
+      
 
     )
   }

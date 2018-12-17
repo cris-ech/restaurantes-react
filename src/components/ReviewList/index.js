@@ -1,6 +1,7 @@
 import React from 'react'
 import axios from 'axios'
 import ReviewCard from "../ReviewCard";
+import { Container, Row, Col } from "reactstrap";
 
 
 class ReviewList extends React.Component {
@@ -36,21 +37,30 @@ class ReviewList extends React.Component {
   render() {
     //const { params } = this.props.match
     return (
-      <ul>
+      <Container fluid>
+      <h2 style={{fontWeight:'300',
+      fontSize: '180%',
+      textAlign:'center',
+      wordSpacing: '3px',
+      letterSpacing:'1px',
+      paddingTop:'10px',
+    }}>
+    ¿Que opinan sus clientes?</h2>
+    <hr  style={{marginBottom:'10px',backgroundColor:'#e67e22'}} className="my-2"></hr>
         {this.state.Reviews.map(review => {
         if (review.restaurante  == this.state.idApi ) {
-        return <li key={`review_${Math.random()}`}>
+        return <box>
         <ReviewCard
         name={review.name}
         rate={review.rate}
         valoration={review.review}
         />
-        </li>
+        </box>
         }
         })}
       
         
-      </ul>
+      </Container>
 
     )
   }

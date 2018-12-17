@@ -7,11 +7,22 @@ import Fake from './components/Fake'
 import NotFound from './components/NotFound'
 import Sale from './components/Sale'
 import SaleList from './components/SaleList'
-
+import Header from './components/Header'
+import Footer from './components/Footer'
+import { Container, Row, Col } from "reactstrap";
+import "bootstrap/dist/css/bootstrap.css";
 
 class App extends React.Component {
   render() {
     return (
+      <Container style={{border:'solid 1px #e67e22'}} fluid>
+        <Header/>
+        <Row style={{fontWeight:'300',
+        fontSize:'20',
+        textRendering:'optimizeLegibility',
+        color:'black',
+        
+        }}>
       <Router>
         <Switch>
           <Route exact path="/" component={Fake} />
@@ -22,6 +33,10 @@ class App extends React.Component {
           <Route component={NotFound} />
       </Switch>
     </Router>
+    <Footer/>
+    </Row>
+    
+    </Container>
     )
   }
 }
