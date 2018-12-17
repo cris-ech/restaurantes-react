@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/restaurantes-react/static/media/2.9c48ae1d.jpg"
   },
   {
-    "revision": "6cc54330acc830bd94ae",
+    "revision": "1f7aca29f57faa8b939c",
     "url": "/restaurantes-react/static/css/main.22404584.chunk.css"
   },
   {
@@ -24,8 +24,8 @@ self.__precacheManifest = [
     "url": "/restaurantes-react/static/media/1.5b40cf5e.jpg"
   },
   {
-    "revision": "6cc54330acc830bd94ae",
-    "url": "/restaurantes-react/static/js/main.6cc54330.chunk.js"
+    "revision": "1f7aca29f57faa8b939c",
+    "url": "/restaurantes-react/static/js/main.1f7aca29.chunk.js"
   },
   {
     "revision": "54bb0235511e23baf332dd786b4409ab",
@@ -44,7 +44,7 @@ self.__precacheManifest = [
     "url": "/restaurantes-react/static/css/1.db318142.chunk.css"
   },
   {
-    "revision": "4fb62371abfaa29d6b1783597141a0e7",
+    "revision": "9b65ab0f2fd1c26e451179a8765bc04c",
     "url": "/restaurantes-react/index.html"
   }
 ];

@@ -1,7 +1,7 @@
 {
   "main.css": "/restaurantes-react/static/css/main.22404584.chunk.css",
-  "main.js": "/restaurantes-react/static/js/main.6cc54330.chunk.js",
-  "main.js.map": "/restaurantes-react/static/js/main.6cc54330.chunk.js.map",
+  "main.js": "/restaurantes-react/static/js/main.1f7aca29.chunk.js",
+  "main.js.map": "/restaurantes-react/static/js/main.1f7aca29.chunk.js.map",
   "static/css/1.db318142.chunk.css": "/restaurantes-react/static/css/1.db318142.chunk.css",
   "static/js/1.392b66ad.chunk.js": "/restaurantes-react/static/js/1.392b66ad.chunk.js",
   "static/js/1.392b66ad.chunk.js.map": "/restaurantes-react/static/js/1.392b66ad.chunk.js.map",
@@ -16,6 +16,6 @@
   "static/css/main.22404584.chunk.css.map": "/restaurantes-react/static/css/main.22404584.chunk.css.map",
   "static/css/1.db318142.chunk.css.map": "/restaurantes-react/static/css/1.db318142.chunk.css.map",
   "index.html": "/restaurantes-react/index.html",
-  "precache-manifest.c6200fb792e9c6f5122010e8183d4b5c.js": "/restaurantes-react/precache-manifest.c6200fb792e9c6f5122010e8183d4b5c.js",
+  "precache-manifest.6861dc515070c691b59e527c9d22e926.js": "/restaurantes-react/precache-manifest.6861dc515070c691b59e527c9d22e926.js",
   "service-worker.js": "/restaurantes-react/service-worker.js"
 }
