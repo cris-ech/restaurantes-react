@@ -26,11 +26,10 @@ class App extends React.Component {
         }}>
       <Router>
         <Switch>
-          <Route exact path="/" component={Fake} />
-          <Route path="/restaurant/:id" component={Restaurant} />
-          <Route path="/oferta/:id" component={Sale} />
-          <Route path="/ofertas" component={SaleList} />
-          <Route path="/fake" component={Fake} />
+          <Route exact path={process.env.PUBLIC_URL + '/'} component={Fake} />
+          <Route path={process.env.PUBLIC_URL +'/restaurant/:id'} component={Restaurant} />
+          <Route path={process.env.PUBLIC_URL +'/oferta/:id'} component={Sale} />
+          <Route path={process.env.PUBLIC_URL +'/ofertas'} component={SaleList} />
           <Route component={NotFound} />
       </Switch>
     </Router>

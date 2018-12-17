@@ -3,6 +3,7 @@ import axios from 'axios'
 import SaleRestaurant from '../SaleRestaurant'
 import Review from '../Review'
 import ReviewList from '../ReviewList'
+import Reservation from '../Reservation'
 import { Container, Row, Col,UncontrolledCarousel } from "reactstrap";
 import image1 from './1.jpg'
 import image2 from './2.jpg'
@@ -93,6 +94,13 @@ class Restaurant extends React.Component {
       <section style={{backgroundColor:'#f4f4f4', paddingBottom:'15px'}}>
       <div>
         <Review
+        idApi = {this.state.idRestaurante}
+        />
+      </div>
+      </section>
+      <section style={{backgroundColor:'#fff', paddingBottom:'15px'}}>
+      <div>
+        <Reservation
         idApi = {this.state.idRestaurante}
         />
       </div>
