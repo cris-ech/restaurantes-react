@@ -15,7 +15,8 @@ import "bootstrap/dist/css/bootstrap.css";
 class App extends React.Component {
   render() {
     return (
-      <Container style={{border:'solid 1px #e67e22'}} fluid>
+      <Container  
+       fluid>
         <Header/>
         <Row style={{fontWeight:'300',
         fontSize:'20',
@@ -33,10 +34,14 @@ class App extends React.Component {
           <Route component={NotFound} />
       </Switch>
     </Router>
-    <Footer/>
-    </Row>
     
+    
+    </Row>
+ 
+    <Footer />
+ 
     </Container>
+ 
     )
   }
 }

@@ -57,7 +57,7 @@ class Restaurant extends React.Component {
   render() {
     //const { params } = this.props.match
     return (
-      <Container fluid>
+      //<Container fluid>
       <section style={{backgroundColor:'#fff'}} >
       <div style={{
         paddingBottom: '65'}}>
@@ -99,7 +99,7 @@ class Restaurant extends React.Component {
       </section>
       </div>
       </section>
-      </Container>
+      //</Container>
 
       //anadir acceso a ofertas del restaurante
       //anadir acceso a reserva
